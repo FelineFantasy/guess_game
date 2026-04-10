@@ -1,54 +1,54 @@
 # Guess Game 🎮 [![Rust Version](https://img.shields.io/badge/rust-1.70+-orange.svg)](https://www.rust-lang.org/)
 
-Классическая игра «Угадай число» на Rust. Компьютер загадывает число, а вы должны угадать его за минимальное количество попыток!
+A classic "Guess the Number" game in Rust. The computer picks a random number, and you have to guess it in the minimum number of attempts!
 
-## 📋 Содержание
-- [Описание](#описание)
-- [Как играть](#как-играть)
-- [Установка](#установка)
-- [Запуск](#запуск)
-- [Требования](#требования)
-- [Автор](#автор)
+## 📋 Table of Contents
+- [Description](#description)
+- [How to Play](#how-to-play)
+- [Installation](#installation)
+- [Running](#running)
+- [Requirements](#requirements)
+- [Author](#author)
 
-## 📝 Описание
-**Guess Game** — это простая консольная игра, в которой нужно угадать случайное число от 1 до 100. После каждой попытки игра подскажет, больше или меньше загаданного ваше число.
+## 📝 Description
+**Guess Game** is a simple console game where you need to guess a random number from 1 to 100. After each attempt, the game will hint whether your number is higher or lower.
 
-### Особенности:
-- 🎯 **Простота** — интуитивно понятный интерфейс
-- 🔄 **Бесконечные попытки** — играйте до победного
-- 📊 **Подсчёт попыток** — отслеживайте свою эффективность
-- 🎲 **Случайные числа** — новая игра каждый раз
+### Features:
+- 🎯 **Simplicity** — Intuitive interface
+- 🔄 **Unlimited attempts** — Play until you win
+- 📊 **Attempt tracking** — Track your efficiency
+- 🎲 **Random numbers** — New game every time
 
-## 🎮 Как играть
-1. Запустите игру
-2. Введите число от 1 до 100
-3. Получите подсказку («больше» или «меньше»)
-4. Повторяйте, пока не угадаете!
+## 🎮 How to Play
+1. Run the game
+2. Enter a number from 1 to 100
+3. Get a hint ("higher" or "lower")
+4. Repeat until you guess!
 
-## ⚙️ Установка
-### Через Git:
+## ⚙️ Installation
+### Via Git:
 ```bash
 git clone https://github.com/FelineFantasy/guess_game.git
 cd guess_game
 ```
 
-### Добавьте в Cargo.toml:
+### Add to Cargo.toml:
 ```toml
 [dependencies]
 rand = "0.8"
 ask_input = "0.1.0"
 ```
 
-## 🚀 Запуск
+## 🚀 Running
 ```bash
 cargo run
 ```
 
-## 📋 Требования
+## 📋 Requirements
 - Rust 1.70+
 - Cargo
 
-## 👤 Автор
+## 👤 Author
 **FelineFantasy**
 
-Лицензия: MIT
+License: MIT
