@@ -1,35 +1,29 @@
-// ==== Импорт библиотек ====
 use ask_input::{int_input, str_input};
 use rand::Rng;
 
 fn main() {
-    // ==== Создания переменных ====
     let mut count = 0;
-    let mut rng = rand::thread_rng();
-    let secret = rng.gen_range(1..=100);
+    let secret = rand::thread_rng().gen_range(1..=100);
 
-    // ==== Цикл игры ====
+    println!("Угадай число от 1 до 100!");
+    println!("{}", "=".repeat(50));
+
     loop {
-        // Ввод пользователя
-        println!("Введите число от 1 до 100: ");
+        print!("Введите число: ");
         let guess = int_input();
         count += 1;
 
-        // Проверка
         if guess == secret {
             println!("{}", "=".repeat(50));
-            println!("Ты угадал за {} попытки!", count);
+            println!("Ты угадал за {} попыток!", count);
             println!("{}", "=".repeat(50));
             break;
         } else if guess < secret {
-            println!("{}", "=".repeat(50));
-            println!("Число больше {}!", guess);
-            println!("{}", "=".repeat(50));
+            println!("Больше {}!", guess);
         } else {
-            println!("{}", "=".repeat(50));
-            println!("Число меньше {}!", guess);
-            println!("{}", "=".repeat(50));
+            println!("Меньше {}!", guess);
         }
+        println!("{}", "=".repeat(50));
     }
 
     println!("Нажми Enter для выхода...");
