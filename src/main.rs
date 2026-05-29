@@ -1,4 +1,4 @@
-use ask_input::{int_input, str_input};
+use ask_input::input;
 use rand::Rng;
 
 fn main() {
@@ -10,7 +10,15 @@ fn main() {
 
     loop {
         print!("Введите число: ");
-        let guess = int_input();
+        
+        let guess: i32 = match input() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Ошибка! Введите целое число.");
+                continue;
+            }
+        };
+        
         count += 1;
 
         if guess == secret {
@@ -27,5 +35,5 @@ fn main() {
     }
 
     println!("Нажми Enter для выхода...");
-    str_input();
+    input::<String>().unwrap();
 }
