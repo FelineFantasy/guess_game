@@ -4,9 +4,9 @@ version = 4
 
 [[package]]
 name = "ask_input"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "69268d083352ca9eaf32f91634d9297af1403e267ac690653babe9a71c7acffd"
+checksum = "c50a18ca1fff09bf0d939ee2c587c30471a999bdd6937edddf5bf1778cad3b65"
 
 [[package]]
 name = "cfg-if"
@@ -26,18 +26,18 @@ dependencies = [
 ]
 
 [[package]]
-name = "libc"
-version = "0.2.183"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b5b646652bf6661599e1da8901b3b9522896f01e736bad5f723fe7a3a27f899d"
-
-[[package]]
-name = "my_app"
+name = "guess_game"
 version = "0.1.0"
 dependencies = [
  "ask_input",
  "rand",
 ]
+
+[[package]]
+name = "libc"
+version = "0.2.183"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b5b646652bf6661599e1da8901b3b9522896f01e736bad5f723fe7a3a27f899d"
 
 [[package]]
 name = "ppv-lite86"
